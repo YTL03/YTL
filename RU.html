@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="R.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    </head>
+    <body>
+        <div id="loadingScreen">
+            <div id="open"></div>
+        </div>
+
+
+    <!--內容-->
+        <nav>
+            <ul id="main_menu">
+                <li><a href="RU.html">RU</a></li>
+                <li><a href="ABOUT.html">ABOUT</a></li>
+                <li><a href="ILLUSTRATION.html">ILLUSTRATION</a></li>
+                <li><a href="PHOTOGRAPHY.html">PHOTOGRAPHY</a></li>
+                <li><a href="DIGITAL DRAWING.html">DIGITAL DRAWING</a></li>
+                <li><a href="KNOCK KNOCK.html">KK</a></li>
+            </ul>
+        </nav>
+
+        <div class="box">
+             <h1>RU</h1>
+        </div>
+
+    <div class="RU-images">
+        <a href="weeh.html">
+          <img src="images/未命名的作品.png" alt="weeh">
+        </a>
+    </div>
+
+            
+
+            <div class="content">
+                <div class="title">
+                    <pre>
+                    <h1><a href="KNOCK KNOCK.html">KNOCK KNOCK</a></h1>
+                    <h1><a href="ABOUT.html">ABOUT ME</a></h1>
+                </pre>
+            </div>
+
+            <div class="ILLUSTRATION">
+                <img src="images/硬要40張 奇怪餒_210617_7.png" alt="Image 1">
+                <img src="images/IMG_0850.jpg" alt="Image 2">
+                <img src="images/IMG_2329.JPG" alt="Image 3">
+                <img src="images/08864B1E-B7A6-48F9-A514-8751B3A2FF6B.jpg" alt="Image 4">
+                <img src="images/IMG_2936.JPG" alt="Image 5">
+                <img src="images/IMG_1168.JPG" alt="Image 6">
+                <img src="images/IMG_2088.JPG" alt="Image 7">
+                <img src="images/IMG_1167.JPG" alt="Image 8">
+                <img src="images/IMG_0786.JPG" alt="Image 9">
+                <img src="images/IMG_2418.JPG" alt="Image 10">
+                <img src="images/IMG_2419.JPG" alt="Image 11">
+                <img src="images/IMG_2420.JPG" alt="Image 12">
+            </div>
+
+            <div class="ILLUSTRATION">
+                <img src="images/IMG_9631.JPG" alt="images 1">
+                <img src="images/DSCN8298.jpg" alt="images 2">
+                <img src="images/DSCN8370.jpg" alt="images 3">
+                <img src="images/74E80C4A-1A54-4995-8C0F-41A9EEDEBFBD.JPG" alt="Image 4">
+                <img src="images/IMG_3029.jpg" alt="images 5">
+                <img src="images/IMG_2962.jpg" alt="images 6">
+                <img src="images/IMG_1328.jpg" alt="images 7">
+                <img src="images/IMG_3447.jpg" alt="images 8">
+                <img src="images/FullSizeRender.jpg" alt="images 9">
+                <img src="images/IMG_8828.jpg" alt="images 00">
+            </div>
+            <div class="ILLUSTRATION">
+                    <img src="images/IMG_3071.PNG" alt="images 1">
+                    <img src="images/IMG_3072.PNG" alt="images 2">
+                    <img src="images/IMG_3073.PNG" alt="images 3">
+                    <img src="images/IMG_3573.PNG" alt="images 4">
+                    <img src="images/IMG_3574.PNG" alt="images 6">
+                    <img src="images/IMG_3575.PNG" alt="images 7">
+                    <img src="images/IMG_3576.PNG" alt="images 8">
+                    <img src="images/IMG_3577.PNG" alt="images 9">
+                    <img src="images/IMG_3578.PNG" alt="images 00">
+                </div>
+            </div>
+
+
+        
+
+        <script>
+            window.addEventListener('scroll', function() {
+                const mainMenu = document.getElementById('main_menu');
+                if (window.scrollY > 50) { 
+                    mainMenu.classList.add('show');
+                }
+            });
+        </script>
+
+        <script>
+            window.addEventListener('load', function() {
+                var menu = document.getElementById('main_menu');
+                if (menu) {
+                    menu.classList.add('show');
+                }
+            });
+
+        const images = [
+            'images/硬要40張 奇怪餒_210617_7.png',
+            'images/IMG_0850.jpg',
+            'images/IMG_2329.JPG',
+            'images/08864B1E-B7A6-48F9-A514-8751B3A2FF6B.jpg',
+            'images/IMG_2836.JPG',
+            'images/IMG_1168.JPG',
+            'images/IMG_2088.JPG',
+            'images/IMG_1167.JPG',
+            'images/IMG_0786.JPG',
+            'images/IMG_2418.JPG',
+            'images/IMG_2419.JPG',
+            'images/IMG_2420.JPG',
+            'images/IMG_9631.JPG',
+            'images/DSCN8298.jpg',
+            'images/DSCN8370.jpg',
+            'images/74E80C4A-1A54-4995-8C0F-41A9EEDEBFBD.JPG',
+            'images/IMG_3029.jpg',
+            'images/IMG_2962.jpg',
+            'images/IMG_1328.jpg',
+            'images/IMG_3447.jpg',
+            'images/FullSizeRender.jpg',
+            'images/IMG_8828.jpg',
+            'images/IMG_3071.PNG',
+            'images/IMG_3072.PNG',
+            'images/IMG_3073.PNG',
+            'images/IMG_3573.PNG',
+            'images/IMG_3574.PNG',
+            'images/IMG_3575.PNG',
+            'images/IMG_3576.PNG',
+            'images/IMG_3577.PNG',
+            'images/IMG_3578.PNG'
+        ];
+
+        const box = document.querySelector('.box');
+
+        const imageContainer = document.createElement('div');
+        imageContainer.classList.add('image-container');
+        box.appendChild(imageContainer);
+
+        function changeBackgroundRandomly() {
+            const randomImage = images[Math.floor(Math.random() * images.length)];
+
+            const newImage = new Image();
+            newImage.src = randomImage;
+
+            newImage.onload = () => {
+
+                imageContainer.style.opacity = 0;
+
+                setTimeout(() => {
+                    imageContainer.style.backgroundImage = `url('${newImage.src}')`;
+                    imageContainer.style.opacity = 1;  
+                }, 150);  
+            };
+        }
+
+        setInterval(changeBackgroundRandomly, 3000);
+
+        changeBackgroundRandomly();
+        </script>
+
+</body>
+</html>

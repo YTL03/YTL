@@ -1,0 +1,150 @@
+body {
+    background-color: rgb(249, 244, 241);
+    font-family: Arial, sans-serif;
+}
+
+.box {
+    background-color: rgb(0, 0, 0);
+    color: rgb(249, 244, 241);
+    max-width: 3000px;
+    margin: 50px auto;
+    padding: 50px;
+    border-radius: 36px;
+    font-size: 30px;
+    line-height: 1;
+    position: relative;
+    text-align: center;
+}
+
+.background-img{
+    width: 1600px !important;
+    height: auto !important;
+    border-radius: 180px;
+    transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.background-img:hover {
+    opacity: 0.7;
+    filter: invert(1) brightness(1.2);
+}
+
+.RU-images {
+    position: absolute;
+    top: 0px;
+    left: 12%;
+    transform: translateX(-200%);
+    width: 170px !important;
+    height: auto !important;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.RU-images a img {
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.RU-images a img:hover {
+    transform: scale(1.05);
+}
+
+.overlay-images {
+    position: absolute; 
+    top: 2050px;
+    left: 0;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.overlay-images.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.overlay-images img {
+    width: 120px;
+    height: auto;
+    border-radius: 30px;
+}
+
+.overlay-images a img {
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.overlay-images a img:hover {
+    transform: scale(1.05);
+}
+
+
+.box img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.box h1, .box p {
+    margin-top: 20px;
+}
+
+.date {
+    color: rgb(249, 244, 241);
+}
+
+.content {
+    border: solid 1px rgb(249, 244, 241);
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.pic {
+    text-align: center;
+}
+
+.pic > img {
+    width: 100%;
+    max-width: 600px;
+}
+
+#main_menu {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    margin: 0;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 2.6s, transform 2.6s;
+}
+
+#main_menu.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#main_menu li {
+    margin: 0 15px;
+}
+
+#main_menu li a {
+    text-decoration: none;
+    font-size: 36px;
+    color: rgb(129, 180, 201);
+    padding: 8px 28px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s; 
+    border-radius: 5px; 
+}
+
+#main_menu li a:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(115, 156, 233);
+}
+
